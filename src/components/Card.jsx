@@ -1,9 +1,12 @@
 
-function Card({ card }) {
+function Card({ card,onClick }) {
   return (
-    <div className="card">
-<div className="card-front">?</div>
-      <div className="card-back" >{card}</div>
+    <div
+      className={`card ${card.isflipped ? 'flipped' : ''}`}
+      onClick={() => onClick(card)}
+    >
+      <div className="card-front">?</div>
+      <div className="card-back">{card.value}</div>
     </div>
   );
 }
