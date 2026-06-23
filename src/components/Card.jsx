@@ -1,8 +1,7 @@
-
-function Card({ card,onClick }) {
+function Card({ card, onClick }) {
   return (
     <div
-      className={`card ${card.isflipped ? 'flipped' : ''}`}
+      className={`card ${card.isFlipped ? "flipped" : ""}`}
       onClick={() => onClick(card)}
     >
       <div className="card-front">?</div>
