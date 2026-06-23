@@ -1,26 +1,27 @@
-import React from 'react';
+import React from "react";
 
-function GameHeader({score,moves}
+function GameHeader({ score, moves, onReset }) {
+  return (
+    <>
+      <header className="game-header">
+        <h1>Memory Card Game</h1>
+      </header>
+      <div>
+        <div>
+          Score:
+          <span>{score}</span>
+        </div>
+        <div>
+          Moves:
+          <span>{moves}</span>
+        </div>
 
-) {
-	return (
-        <>
-		<header className="game-header">
-			<h1>Memory Card Game</h1>
-		</header>
-         <div>
-    <div>Score:
-      <span>{score}</span>
-    </div>
-    <div>Moves:
-       <span>{moves}</span>
-    </div>
-
-  
-    <button>New Game</button>
+        <button className="reset-btn" onClick={onReset}>
+          New Game
+        </button>
       </div>
-      </>
-	);
+    </>
+  );
 }
 
 export default GameHeader;
