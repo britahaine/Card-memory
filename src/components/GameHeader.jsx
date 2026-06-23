@@ -1,6 +1,6 @@
 import React from "react";
 
-function GameHeader({ score, moves }) {
+function GameHeader({ score, moves, onReset }) {
   return (
     <>
       <header className="game-header">
@@ -16,7 +16,7 @@ function GameHeader({ score, moves }) {
           <span>{moves}</span>
         </div>
 
-        <button className="reset-btn" onClick={onreset}>
+        <button className="reset-btn" onClick={onReset}>
           New Game
         </button>
       </div>

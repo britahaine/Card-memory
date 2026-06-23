@@ -1,4 +1,4 @@
-export const WinMessage = ({ moves }) => {
+const WinMessage = ({ moves }) => {
   return (
     <div className="win-message">
       <h2>Congratulations!</h2>

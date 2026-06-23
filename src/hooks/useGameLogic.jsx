@@ -9,6 +9,7 @@ export const useGameLogic = (cardValues) => {
   const [isLocked, setIsLocked] = useState(false);
 
   const shuffleArray = (array) => {
+    // copy array but dont modify the original
     const shuffled = [...array];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -87,7 +88,7 @@ export const useGameLogic = (cardValues) => {
 
           setFlippedCards([]);
           setIsLocked(false);
-        }, 500);
+        }, 1000);
       } else {
         // flip back card 1, card 2
 
