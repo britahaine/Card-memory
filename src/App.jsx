@@ -4,22 +4,22 @@ import WinMessage from "./components/WinMessage";
 import { useGameLogic } from "./hooks/useGameLogic";
 
 const cardValues = [
-  "book",
-  "pen",
-  "pencil",
-  "paper",
-  "rubber",
-  "chalk",
-  "desk",
-  "teacher",
-  "book",
-  "pen",
-  "pencil",
-  "paper",
-  "rubber",
-  "chalk",
-  "desk",
-  "teacher",
+  "🍎",
+  "🍌",
+  "🍇",
+  "🍉",
+  "🍒",
+  "🍓",
+  "🍍",
+  "🥝",
+  "🍎",
+  "🍌",
+  "🍇",
+  "🍉",
+  "🍒",
+  "🍓",
+  "🍍",
+  "🥝",
 ];
 
 function App() {
