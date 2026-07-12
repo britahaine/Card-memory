@@ -170,7 +170,7 @@ body {
 
 .card-back {
   background: #1e1e1e;
-  font-size: 1.2rem;
+  font-size: 2rem;
   z-index: 0;
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
